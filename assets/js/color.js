@@ -1015,7 +1015,7 @@
             $(this).removeData('minicolors-target');
           })
           // Selected a swatch
-          .on('click.minicolors', '.minicolors-swatches li', function(event) {
+          .on('mousedown.minicolors', '.minicolors-swatches li', function(event) {
             event.preventDefault();
             var target = $(this), input = target.parents('.minicolors').find('.minicolors-input'), color = target.data('swatch-color');
             updateInput(input, color, getAlpha(color));
